@@ -121,7 +121,7 @@ Web端、客户端
 # 3.界面原型
 ## 3.1 管理员界面
 ### 3.1.1 管理员登录
-![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_log_in.png)
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_log_In.png)
 ### 3.1.2 管理员首页
 ![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_home.jpg)
 ### 3.1.2 管理员站点管理
@@ -131,8 +131,21 @@ Web端、客户端
 ![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_edit.png)
 #### 3.1.2.2 管理员上传漫画
 ![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_upload.png)
-## 3.2 客户端界面
-### 3.2.1
-## 3.3
-### 3.3.1
+## 3.2 客户端界面（未添加部分内容）
+### 3.2.1 用户登录
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/customer_login.jpg)
+### 3.2.2 用户注册
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/register.jpg)
+### 3.2.3 首页
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/customer_home.jpg)
+### 3.2.4 搜索结果
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/customer_search1.jpg)
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/customer_search2.jpg)
+### 3.2.5 阅读界面
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/customer_login.jpg)
+### 3.2.6 订阅界面（含：右键功能示意）
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/customer_subscribe.jpg)
+### 3.2.7 预期界面总览
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/customer_all.jpg)
 ## 3.4 系统功能描述及验收验证标准
+见[管理员功能审查]https://github.com/catus-zsy/comic_fans/blob/main/data/%E5%8A%9F%E8%83%BD%E5%AE%A1%E6%9F%A5-%E7%AE%A1%E7%90%86%E5%91%98.xlsx 和 [客户端功能审查]https://github.com/catus-zsy/comic_fans/blob/main/data/%E5%8A%9F%E8%83%BD%E5%AE%A1%E6%9F%A5-%E7%94%A8%E6%88%B7.xlsx
