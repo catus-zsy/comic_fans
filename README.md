@@ -148,4 +148,4 @@ Web端、客户端
 ### 3.2.7 预期界面总览
 ![image](https://github.com/catus-zsy/comic_fans/blob/main/images/customer/customer_all.jpg)
 ## 3.4 系统功能描述及验收验证标准
-见[管理员功能审查]https://github.com/catus-zsy/comic_fans/blob/main/data/%E5%8A%9F%E8%83%BD%E5%AE%A1%E6%9F%A5-%E7%AE%A1%E7%90%86%E5%91%98.xlsx 和 [客户端功能审查]https://github.com/catus-zsy/comic_fans/blob/main/data/%E5%8A%9F%E8%83%BD%E5%AE%A1%E6%9F%A5-%E7%94%A8%E6%88%B7.xlsx
+见[管理员](https://github.com/catus-zsy/comic_fans/blob/main/data/%E5%8A%9F%E8%83%BD%E5%AE%A1%E6%9F%A5-%E7%AE%A1%E7%90%86%E5%91%98.xlsx) 和 [客户端](https://github.com/catus-zsy/comic_fans/blob/main/data/%E5%8A%9F%E8%83%BD%E5%AE%A1%E6%9F%A5-%E7%94%A8%E6%88%B7.xlsx)功能审查表格
