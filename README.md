@@ -90,10 +90,13 @@
 闲暇时间，少女心满满的姜某某，捧着手机冒着星星眼，在漫画的评论区写道：国家欠我一个巴卫！！！
 看完了最新一话的《步天歌》，下拉界面，出现了《哑舍》、《浮生物语》、《长歌行》等作品，《长歌行》看起来不错，韩某某默默点了一个收藏。
 ### 2.2.4用例图
-管理员端（图待修改）
+管理员
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/UseCase/UseCase_admin.jpg)
+客户端
 ![image](https://github.com/catus-zsy/comic_fans/blob/main/images/UseCase/UseCase_customer.jpg)
+### 2.2.5 类图
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/UseCase/Class.jpg)
 ## 2.3功能需求
-
 ## 2.4假定和约束
 ### 2.4.1假定
 ( 1 ) 可操作性：假定使用的用户在经过一段时间熟悉之后，可以灵活地操作本系统。
