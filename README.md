@@ -121,16 +121,16 @@ Web端、客户端
 # 3.界面原型
 ## 3.1 管理员界面
 ### 3.1.1 管理员登录
-![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_log_in.jpg)
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_log_in.png)
 ### 3.1.2 管理员首页
-![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_log_home.jpg)
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_home.jpg)
 ### 3.1.2 管理员站点管理
-![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_books.jpg)
-![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_web.jpg)
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_books.png)
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_web.png)
 #### 3.1.2.1 管理员编辑漫画tag
-![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_edit.jpg)
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_edit.png)
 #### 3.1.2.2 管理员上传漫画
-![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_upload.jpg)
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/admin/admin_upload.png)
 ## 3.2 客户端界面
 ### 3.2.1
 ## 3.3
