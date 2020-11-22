@@ -91,7 +91,7 @@
 看完了最新一话的《步天歌》，下拉界面，出现了《哑舍》、《浮生物语》、《长歌行》等作品，《长歌行》看起来不错，韩某某默默点了一个收藏。
 ### 2.2.4用例图
 管理员端（图待修改）
-用户端（图待修改）
+![image](https://github.com/catus-zsy/comic_fans/blob/main/images/UseCase/UseCase_customer.jpg)
 ## 2.3功能需求
 
 ## 2.4假定和约束
