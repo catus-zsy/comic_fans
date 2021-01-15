@@ -1,0 +1,745 @@
+@charset "UTF-8";
+
+
+
+
+/*----------窗体top---------*/
+
+body{
+	margin:0px;
+}
+
+/*----------窗体bottom---------*/
+
+
+
+
+
+/*----------左侧导航栏top-----------*/
+
+.v_menu{
+	background: linear-gradient(#bcc4e9,#dce4fb,#f0e6ef,#fab4bf);/*渐变色*/
+	width:200px;
+	height:100%;	
+	position:fixed;
+}
+
+.v_menu .User{
+	z-index:2;
+}
+
+.v_menu .User .uname{
+	position:absolute;
+	left:80px;
+	font-size:16px;
+	text-decoration:none;
+	color:#be3cf7;
+	margin-top:10px;
+	margin-left:14px;
+	z-index:2;
+}
+
+.v_menu .secondblock{
+	position:relative;
+}
+
+.v_menu .secondblock .firstul{
+	list-style:none;
+}
+
+.v_menu .secondblock .firstul .firstli{
+	position:relative;
+	height:35px;
+	margin-right:-38px;
+	margin-top:-10px;
+	left:-38px;
+}
+.v_menu .secondblock .firstul .firstli:hover{
+	transition:1000ms;
+	background:#f0e6ef;
+}
+.v_menu .secondblock .firstul .firstli .bt{
+	/*先空着*/
+}
+.v_menu .secondblock .firstul .firstli .abt{
+	top:6px;
+	padding-right:130px;
+	padding-left:15px;
+	position:relative;
+	color:#d45e71;
+	left:2px;
+	font-size:20px;
+	font-family:KaiTi;
+	text-decoration:none;
+}
+.v_menu .secondblock .firstul .firstli .abt:after{
+ 	content: "\e6a2";							/*前图标，从iconfont类中引用的图标，\f107是标号，在jsp文件中要添加icofont.css的link*/
+ 	font-family: iconfont;
+    position: absolute;							/*这里要设置absolute不然图标会乱跑*/
+    top:0px;
+	left:165px;
+	display:block;
+}
+.v_menu .secondblock .firstul .firstli .abt:active:after{
+ 	content: "\e659";							/*前图标，从iconfont类中引用的图标，\f107是标号，在jsp文件中要添加icofont.css的link*/
+ 	font-family: iconfont;
+    position: absolute;							/*这里要设置absolute不然图标会乱跑*/
+    top:0px;
+	left:165px;
+	display:block;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul {
+	top:13px;
+	position:relative;
+	display:none;
+	list-style:none;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul .secondli{
+	position:relative;
+	height:35px;
+	left:-38px;
+}
+.v_menu .secondblock .firstul .firstli .secondul .secondli:hover{
+	transition:1000ms;
+	background:#f0e6ef;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul .secondli .bt{
+	top:6px;
+	position:relative;
+	left:0px;
+	border:none;
+	background:none;
+	font-size:20px;
+	font-family:KaiTi;
+	outline:none;
+	color:#d45e71;
+	padding-right:109px;
+}
+.v_menu .secondblock .firstul .firstli .secondul .secondli .bt:hover{
+	color:red;
+}
+
+.v_menu .thirdblock{
+	position:relative;
+	top:390px;
+}
+
+.v_menu .thirdblock .firstul{
+	list-style:none;
+}
+
+.v_menu .thirdblock .firstul .firstli{
+	position:relative;
+	left:-38px;
+}
+
+.v_menu .thirdblock .firstul .firstli .bt{
+	top:11px;
+	position:relative;
+	left:4px;
+	border:none;
+	background:none;
+	font-size:20px;
+	font-family:SimSun;
+	color:#8c96ff;
+	outline:none;
+}
+
+.v_menu .thirdblock .firstul .firstli .bt:hover{
+	color:white;
+}
+
+/*----------左侧导航栏bottom-----------*/
+
+
+
+
+
+/*----------弹窗相关top----------*/
+
+/*-----阴影top-----*/
+.shadow{
+	position:fixed;
+	opacity:0.5;
+	display:none;
+	background:black;
+	padding-top:400px;
+	padding-bottom:1000px;
+	padding-left:800px;
+	padding-right:1200px;
+	margin-top:-500px;
+	margin-bottom:-200px;
+	margin-left:-10px;
+	margin-right:-10px;
+	z-index:2;
+}
+/*-----阴影bottom-----*/
+
+/*-----用户弹窗（注册和登录）top-----*/
+
+/*注册top*/
+.UserRegistWindow {
+	background: linear-gradient(#bcc4e9,#dce4fb,#f0e6ef,#fab4bf);/*渐变色*/
+	display:none;
+	width:240px;
+	height:250px;
+	position:fixed;
+	float:left;
+	top:50%;
+	left:50%;
+	margin-top:-125px; 
+	margin-left:-120px;
+	z-index:2;
+}
+
+.UserRegistWindow input{
+	padding-top:2px;
+	padding-bottom:3px;
+	padding-left:5px;
+	padding-right:15px;
+	margin-top:-5px;
+	margin-bottom:0px;
+	margin-left:50px;
+	margin-right:0px;
+	position:relative;
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    outline:none;
+    width: 120px;
+    height:20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+}
+
+.UserRegistWindow input:focus{								/*点击框之后发光*/
+    border-color: #fab4bf;
+}
+
+.ShutWindowBt_URe{
+	font-size:12px;
+	border:none;
+	color:#ffffff;
+	background:none;
+	float:right;
+	outline:none;
+}
+.ShutWindowBt_URe:hover{
+	color:#d45e71;
+}
+
+.URegistBt{
+	font-size:16px;
+	border:none;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:44px;
+	padding-right:44px;
+	margin-top:16px;
+	margin-left:50px;
+	background:#ffffff;
+	color:#bcc4e9;
+	outline:none;
+}
+.URegistBt:hover{
+	color:#fab4bf;
+}
+/*注册bottom*/
+
+/*登录top*/
+.UserLoginWindow {
+	background: linear-gradient(#bcc4e9,#dce4fb,#f0e6ef,#fab4bf);/*渐变色*/
+	display:none;
+	width:240px;
+	height:210px;
+	position:fixed;
+	float:left;
+	top:50%;
+	left:50%;
+	margin-top:-100px; 
+	margin-left:-120px;
+	z-index:2;
+}
+
+.UserLoginWindow input{
+	padding-top:2px;
+	padding-bottom:3px;
+	padding-left:5px;
+	padding-right:15px;
+	margin-top:-5px;
+	margin-bottom:0px;
+	margin-left:50px;
+	margin-right:0px;
+	position:relative;
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    outline:none;
+    width: 120px;
+    height:20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+}
+
+.UserLoginWindow input:focus{								/*点击框之后发光*/
+    border-color: #fab4bf;
+}
+.ShutWindowBt_ULog{
+	font-size:12px;
+	border:none;
+	color:#ffffff;
+	background:none;
+	float:right;
+	outline:none;
+}
+.ShutWindowBt_ULog:hover{
+	color:#d45e71;
+}
+.ULoginBt{
+	font-size:16px;
+	border:none;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:44px;
+	padding-right:44px;
+	margin-top:16px;
+	margin-left:50px;
+	background:#ffffff;
+	color:#bcc4e9;
+	outline:none;
+}
+.ULoginBt:hover{
+	color:#fab4bf;
+}
+/*登录bottom*/
+
+/*-----用户弹窗（注册和登录）top-----*/
+
+
+/*-----管理员登录弹窗top-----*/
+.AdminLoginWindow {
+	background: linear-gradient(#bcc4e9,#dce4fb,#f0e6ef,#fab4bf);/*渐变色*/
+	display:none;
+	width:240px;
+	height:210px;
+	position:fixed;
+	float:left;
+	top:50%;
+	left:50%;
+	margin-top:-100px; 
+	margin-left:-120px;
+	z-index:2;
+}
+
+.AdminLoginWindow input{
+	padding-top:2px;
+	padding-bottom:3px;
+	padding-left:5px;
+	padding-right:15px;
+	margin-top:-5px;
+	margin-bottom:0px;
+	margin-left:50px;
+	margin-right:0px;
+	position:relative;
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    outline:none;
+    width: 120px;
+    height:20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+}
+
+.AdminLoginWindow input:focus{								/*点击框之后发光*/
+    border-color: #fab4bf;
+}
+
+.ShutWindowBt_ALog{
+	font-size:12px;
+	border:none;
+	color:#ffffff;
+	background:none;
+	float:right;
+	outline:none;
+}
+.ShutWindowBt_ALog:hover{
+	color:#d45e71;
+}
+
+.ALoginBt{
+	font-size:16px;
+	border:none;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:44px;
+	padding-right:44px;
+	margin-top:16px;
+	margin-left:50px;
+	background:#ffffff;
+	color:#bcc4e9;
+	outline:none;
+}
+.ALoginBt:hover{
+	color:#fab4bf;
+}
+
+/*-----管理员登录弹窗bottom-----*/
+
+/*----------弹窗相关bottom----------*/
+
+
+
+
+
+/*----------右侧功能区域top----------*/
+
+/*-----左半部分top------*/
+.main{
+	position:absolute;
+	left:200px;
+	float:left;
+	display:block;
+	width:86%;
+}
+
+.main .TopImage .topimage{
+	position:fixed;
+	width:100%;
+	z-index:1;
+}
+
+.main .SearchMethod{
+	position:relative;
+	top:250px;
+	width:50%;
+	padding-left:0px;
+	display:block;
+}
+
+.main .SearchMethod .firstul{
+	display:block;
+	list-style:none;
+	margin-left:160px;
+}
+
+.main .SearchMethod .SearchBox{
+	margin-left:180px;
+}
+
+.main .SearchMethod .firstul .firstli{
+	float:left;
+	margin-right:30px;
+}
+.main .SearchMethod .firstul .firstli .SelectBt{
+	outline:none;
+	background:none;
+	margin-left:-15px;
+	border:2px solid #bcc4e9;
+	border-radius:10px;
+}
+
+
+.main .SearchMethod .SearchBox{
+	/*先空着*/
+}
+
+.main .SearchMethod .SearchBox input[type=search]{
+	font-size:20px;
+	margin-top:12px;
+	margin-left:-135px;
+	padding-left:10px;
+  width:240px;
+  height:40px;
+  border:3px solid #dce4fb;
+  border-radius: 20px;
+  outline:none;
+  color:#bcc4e9;
+}
+.main .SearchMethod .SearchBox input[type=search]:focus{
+	border:3px solid #bcc4e9;
+}
+
+.main .SearchMethod .SearchBox .SearchBt{
+	font-size:20px;
+	width:40px;
+	height:40px;
+	border:3px solid #fab4bf;
+    border-radius:20px;
+	background:none;
+	outline:none;
+	color:#d45e71;
+}
+
+
+#SearchMangaInput{/*这几个id选择器是和前面的类选择器不冲突，id指定到个体，类不指定*/
+	display:inline;
+}
+#SearchMangaBt{
+	display:inline;
+}
+#SearchAuthorInput{
+	display:none;
+}
+#SearchAuthorBt{
+	display:none;
+}
+#SA{
+	border-color:white;
+}
+/*-----左半部分bottom------*/
+
+
+
+/*-----分割线top-----*/
+
+
+
+.main .diviler{
+	position:relative;
+	top:45px;
+	left:48%;
+	width:8px;
+	height:380px;
+	background: linear-gradient(#bcc4e9,#dce4fb,#f0e6ef,#fab4bf);/*渐变色*/
+}
+
+
+
+/*-----分割线bottom-----*/
+
+
+
+/*-----右半部分top------*/
+
+.VariousClassify{
+	position:relative;
+	left:50%;
+	width:50%;
+	top:-315px;
+}
+
+.VariousClassify .firstul{
+	list-style:none;
+}
+
+.VariousClassify .firstul .firstli{
+	/*先空着*/
+	display:table;
+}
+
+.VariousClassify .firstul .firstli .secondul{
+	list-style:none;	
+	margin-top:20px;
+}
+
+.VariousClassify .firstul .firstli .secondul .secondli{
+	float:left;
+	margin-right:50px;
+}
+
+.VariousClassify .firstul .firstli .secondul .secondli .ClsfBt{
+	font-size:20px;
+	border:none;
+	background:none;
+	outline:none;
+	color:#bcc4e9;
+}
+#state0{
+	color:#d07ee9;
+}
+#classify0{
+	color:#d07ee9;
+}
+#grade0{
+	color:#d07ee9;
+}
+#theme0{
+	color:#d07ee9;
+}
+#area0{
+	color:#d07ee9;
+}
+
+
+
+.VariousClassify .firstul .firstli .secondul .secondli .AdvanceSearch{
+	height:30px;
+	font-size:20px;
+	padding-top:0px;
+	padding-left:10px;
+	padding-right:10px;
+	border:2px solid #bcc4e9;
+	border-radius:15px;
+	background:none;
+	outline:none;
+	color:#bcc4e9;
+}
+
+/*-----右半部分bottom------*/
+
+
+
+/*-----漫画推荐区top-----*/
+
+
+.MangaRecommend{
+	position:relative;
+	top:0px;
+	margin-top:-270px;
+}
+
+.MangaRecommend .h_divider{
+	position:relative;
+	top:-22px;
+	height:10px;
+	left:6px;
+	width:100%;
+	background:#fab4bf;
+}
+
+.MangaRecommend .label1{
+	position:relative;
+	left:35%;
+	font-size:35px;
+	border:none;
+	outline:none;
+	background:none;
+	color:#aeb9ff;
+	margin-right:24px;
+}
+.MangaRecommend .label2{
+	position:relative;
+	left:35%;
+	font-size:35px;
+	border:none;
+	outline:none;
+	background:none;
+	color:#d3ddfa;
+	margin-right:24px;
+}
+.MangaRecommend .label3{
+	position:relative;
+	left:35%;
+	font-size:35px;
+	border:none;
+	outline:none;
+	background:none;
+	color:#f0e6ef;
+	margin-right:24px;
+}
+.MangaRecommend .label4{
+	position:relative;
+	left:35%;
+	font-size:35px;
+	border:none;
+	outline:none;
+	background:none;
+	color:#fab4bf;
+	margin-right:24px;
+}
+.MangaRecommend .label5{
+	position:relative;
+	left:35%;
+	font-size:35px;
+	border:none;
+	outline:none;
+	background:none;
+	color:#e2929d;
+	margin-right:24px;
+}
+
+.MangaRecommend .MangaCover{
+	position:relative;
+	padding-top:210px;
+	top:-170px;
+	left:100px;
+	width:650px;
+}
+
+.MangaRecommend .MangaCover .img{
+	position:relative;
+	float:left;
+	padding-right:80px;
+}
+
+.MangaRecommend .MangaCover .img .cover{
+	position:relative;
+	float:left;
+}
+
+.MangaRecommend .MangaCover .txt{
+	position:relative;
+}
+
+.MangaRecommend .MangaCover .txt .NameBt{
+	border:none;
+	outline:none;
+	background:none;
+	color:blue;
+	font-size:30px;
+	padding:0px;
+	margin-top:10px;
+}
+
+.MangaRecommend .MangaCover .txt .author{
+	font-size:20px;
+	text-decoration:none;
+	color:orange;
+}
+
+.MangaRecommend .MangaCover .txt .classify{
+	font-size:20px;
+	text-decoration:none;
+	color:orange;
+}
+
+.MangaRecommend .MangaCover .txt .abstract{
+	text-decoration:none;
+	color:#c0c0c0;
+}
+
+
+
+/*-----漫画推荐区bottom-----*/
+
+
+
+/*----------右侧功能区域bottom----------*/
+
+
+
+
+/*----------底部提示top---------*/
+.main .notice{
+	position:absolute;
+	left:4px;
+}
+.main .notice a{
+	color:red;
+	text-decoration:none;
+}
+
+.main .num{
+	float:right;
+	margin-top:30px;
+	z-index:2;
+}
+
+.main .num a{
+	text-decoration:none;
+}
+
+#index_time{
+	position:relative;
+	top:100%;
+	float:right;
+	background:none;
+	color:blue;
+}
+
+
+/*----------底部提示bottom---------*/

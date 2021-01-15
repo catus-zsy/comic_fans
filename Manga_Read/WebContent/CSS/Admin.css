@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/*---------------------------------------------------*/
+.h_menu .navigation{							/*1 第一级ul的块的选择器*/
+  position:absolute;						/*设置所有一级菜单的整体位置*/
+  left:0px;									/*离左边的距离*/
+  top:0px;									/*离上边的距离*/
+  padding: 0px;								/*也是离各边的距离，和position不知有何区别*/
+  width:100%;
+  background:#b0ffff;						/*设置一级菜单栏的背景色*/
+  list-style:none;							/*设置为无标志||和pad,mar的区别:https://www.cnblogs.com/dongh/p/9584962.html*/
+  margin: 10px auto;						/*设置两个水平框的距离、外边框*/
+  font-family: 'Century Gothic';			/*貌似是设置字体*/
+  box-shadow: 0px 0px 4px #0080ff;				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+  clear: none;
+  display: table;							/*相当于table标签？*/
+  position:absolute;
+}
+
+.h_menu .navigation .list{
+  padding:6px 10px;
+  font-size: 16px;							/*设置list内的字体大小*/
+  position: relative;						/*设置位置为相对，不清楚是谁的位置*/
+  box-sizing: border-box;					/*box-sizing: content-box; 默认值 内容真正宽度 = 设置的宽度											box-sizing: border-box; 内容真正宽度width= 设置的width- 左右padding - 左右border*/
+  height: 40px;								/*设置一级菜单的高度*/
+  vertical-align: sub;						/*设置元素的垂直对齐方式，sub是垂直对齐文本的下标*/
+  background:#b0ffff;						/*设置一级菜单栏的背景色*/
+  float:left;
+}
+
+
+.classify li>a{									/*2 仅选择类名为classify的ul下的第二级的li的链接a的选择器*/
+	color:#8080ff;
+	font-size:16px;
+	text-decoration: none;						/*取消链接的下划线*/
+	padding:0px 49px 0px;							/*二级菜单的字到各边的距离*/
+	/*border-bottom: 1px solid #8080ff;			一级各菜单之间的分割线颜色，这种是给字设置的，所以只要字下面有一截*/
+	width:50px;
+}
+
+.classify li{									/*3 选择类名为classify的ul下的第二级li的块的选择器*/
+	height:25px;
+	border-bottom: 1px solid #8080ff;			/*二级各菜单之间的分割线颜色*/
+	margin-top:4px;								/*用padding改不了上下边距，要用margintop*/
+}
+
+.h_menu .navigation .list > a{					/*4 仅选择第一级li的链接a的选择器*/
+	font-size:16px;
+	color:blue;									/*一级菜单的字的颜色设置为红色*/
+	padding:5px 50px 10px;							/*一级菜单的字到各边的距离,这个用来改变二级菜单到一级菜单的距离*/
+	display:block;								/*padding和display:block一起用才能设置高度*/
+	text-decoration: none;						/*取消链接的下划线*/
+}
+
+.list{											/*5 选择第一级li的块的选择器*/
+	position:relative;
+	font-size: 20px;							/*设置list内的字体大小,但是优先级低于用a选择器直接设置的字体大小*/
+  	border-bottom: 0px solid #8080ff;			/*一级各菜单之间的分割线颜色,这种是给块设置的，所以整块都有，这里设置为0，将其取消了*/
+}
+
+.list .classify{								/*6 选择第一级li下的第二级u类名为classify的块的选择器*/
+	list-style:none;
+	background:#e1ebff;
+	height:0px;									/*设置其子列表的块高度为0，隐藏块，但隐藏不了文字*/
+	overflow:hidden;							/*使溢出的文字隐藏，如果没有height:0则隐藏不了*/
+	padding:0;									/*这里要设置padding:0不然弹出的边框会有空白*/
+}
+/*控制列表项的是列表内容的上一级，如控制li的标志的是上一级的ul(或ul的类)的选择器*/
+/*但控制排列方式float:left的是列表如li,是li(或li的类)的选择器*/
+/*类选择器貌似只能选两代*/
+.navigation .active > .classify {				/*7 仅选择第二级ul中类名为classify的选择器*/
+	height:auto;								/*必须要设置高度，可以不是auto而是具体数值，不设置高度的话，就是之前的选择器为了隐藏设置的0*/
+}
+
+.navigation .list>a:hover{
+	transition:400ms;
+	color:#ff8080;
+}
+.navigation .list .classify a:hover{
+	transition:400ms;
+	color:#ff9f9f;
+}
+

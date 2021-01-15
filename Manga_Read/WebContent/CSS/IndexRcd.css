@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.index_img .img_list{
+	margin-left:8px;
+}
+
+.mg_link .rcd_title{
+  position:relative;						/*设置所有一级菜单的整体位置*/
+  left:0px;									/*离左边的距离*/
+  top:0px;									/*离上边的距离*/
+  padding: 3px 6px;								/*也是离各边的距离，和position不知有何区别*/
+
+  background:#ffffd5;						/*设置一级菜单栏的背景色*/
+  list-style:none;
+  margin-bottom:10px;							/*设置为无标志||和pad,mar的区别:https://www.cnblogs.com/dongh/p/9584962.html*/
+  margin-left:15px;						/*设置两个水平框的距离、外边框*/
+  font-family: 'Century Gothic';			/*貌似是设置字体*/
+  box-shadow: 0px 0px 2px red;				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+  display: table;							/*相当于table标签？*/
+  float:left;
+
+}
+
+.rcd_title li a{
+	font-size:20px;
+	color:#ff8040;
+}
+
+.mg_link .rcd_content{
+	padding: 4px;
+	background:#ffffd5;
+	box-shadow: 0px 0px 2px orange;				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+}
+.rcd_content .rcd_name a{
+
+	font-size:16px;	
+	color:orange;
+	float:left;
+}

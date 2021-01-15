@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+/*---body---*/
+body{
+	margin:0px;
+}
+/*---body---*/
+
+/*----------左侧导航栏top----------*/
+.v_menu{
+	background: linear-gradient(#bcc4e9,#dce4fb,#f0e6ef,#fab4bf);/*渐变色*/
+	width:200px;
+	height:100%;	
+	position:fixed;
+}
+
+.v_menu .User{
+	z-index:2;
+}
+
+.v_menu .User .uname{
+	position:absolute;
+	left:80px;
+	font-size:16px;
+	text-decoration:none;
+	color:#be3cf7;
+	margin-top:10px;
+	margin-left:14px;
+	z-index:2;
+}
+
+.v_menu .secondblock{
+	position:relative;
+}
+
+.v_menu .secondblock .firstul{
+	list-style:none;
+}
+
+.v_menu .secondblock .firstul .firstli{
+	position:relative;
+	height:35px;
+	margin-right:-38px;
+	margin-top:-10px;
+	left:-38px;
+}
+.v_menu .secondblock .firstul .firstli:hover{
+	transition:1000ms;
+	background:#f0e6ef;
+}
+.v_menu .secondblock .firstul .firstli .bt{
+	/*先空着*/
+}
+.v_menu .secondblock .firstul .firstli .abt{
+	top:6px;
+	padding-right:130px;
+	padding-left:15px;
+	position:relative;
+	color:#d45e71;
+	left:2px;
+	font-size:20px;
+	font-family:KaiTi;
+	text-decoration:none;
+}
+.v_menu .secondblock .firstul .firstli .abt:after{
+ 	content: "\e6a2";							/*前图标，从iconfont类中引用的图标，\f107是标号，在jsp文件中要添加icofont.css的link*/
+ 	font-family: iconfont;
+    position: absolute;							/*这里要设置absolute不然图标会乱跑*/
+    top:0px;
+	left:165px;
+	display:block;
+}
+.v_menu .secondblock .firstul .firstli .abt:active:after{
+ 	content: "\e659";							/*前图标，从iconfont类中引用的图标，\f107是标号，在jsp文件中要添加icofont.css的link*/
+ 	font-family: iconfont;
+    position: absolute;							/*这里要设置absolute不然图标会乱跑*/
+    top:0px;
+	left:165px;
+	display:block;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul {
+	top:13px;
+	position:relative;
+	display:none;
+	list-style:none;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul .secondli{
+	position:relative;
+	height:35px;
+	left:-38px;
+}
+.v_menu .secondblock .firstul .firstli .secondul .secondli:hover{
+	transition:1000ms;
+	background:#f0e6ef;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul .secondli .bt{
+	top:6px;
+	position:relative;
+	left:0px;
+	border:none;
+	background:none;
+	font-size:20px;
+	font-family:KaiTi;
+	outline:none;
+	color:#d45e71;
+	padding-right:109px;
+}
+.v_menu .secondblock .firstul .firstli .secondul .secondli .bt:hover{
+	color:red;
+}
+
+.v_menu .thirdblock{
+	position:relative;
+	top:390px;
+}
+
+.v_menu .thirdblock .firstul{
+	list-style:none;
+}
+
+.v_menu .thirdblock .firstul .firstli{
+	position:relative;
+	left:-38px;
+}
+
+.v_menu .thirdblock .firstul .firstli .bt{
+	top:11px;
+	position:relative;
+	left:4px;
+	border:none;
+	background:none;
+	font-size:20px;
+	font-family:SimSun;
+	color:#8c96ff;
+	outline:none;
+}
+
+.v_menu .thirdblock .firstul .firstli .bt:hover{
+	color:white;
+}
+/*----------左侧导航栏bottom----------*/
+
+
+
+
+
+/*----------右侧主体区域top----------*/
+
+/*----------右侧主体区域-漫画封面top----------*/
+.size{
+	width:240px;
+	position:absolute;
+	left:240px;
+	top:30px;
+}
+
+a{
+	text-decoration:none;
+}
+
+.MgChapter{
+	display:inline;
+	float:left;
+	padding-right:5px;
+}
+
+.MgChapter button{
+	border:1px double #ff8040;
+	background:#ffff80;
+	color:#ff8040;
+}
+
+
+.return{
+	position:fixed;
+	left:240px;
+	top:680px;
+	width:180px;
+}
+
+.ret{
+	position:absolute;
+	font-size:14px;
+	opacity:0.55;
+	border:none;
+	background:#b9d0f4;
+	color:blue;
+}
+
+.introduce{
+	position:absolute;
+	left:500px;
+	top:40px;
+	float:left;
+	width:360px;
+}
+
+.introduce .title{
+	font-size:26px;
+	color:blue;
+}
+.introduce .clsf{
+	font-size:16px;
+	color:#ff6215;
+}
+.introduce .auth{
+	font-size:16px;
+	color:orange;
+}
+
+.introduce .abstract{
+	color:#b9b9b9;
+}
+
+.divide{
+	margin-left:-5px;
+	opacity:0.5;
+}
+/*----------右侧主体区域-漫画封面bottom----------*/
+
+/*------右侧主体区域-收藏按钮top------*/
+.Ct{
+	
+}
+
+.Ct .CollectBt{
+	border:1px solid #fab4bf;
+	background:#f0e6ef;
+	color:#fab4bf;
+	font-siez:16px; 
+}
+.Ct .CollectBt:hover{
+	color:#d45e71;
+}
+/*------右侧主体区域-收藏按钮bottom------*/
+
+/*-----右侧主体区域-评论区top------*/
+.CommentArea{
+	position:absolute;
+	left:240px;
+	top:540px;
+}
+
+.CommentArea .SingleComment{
+	width:400px;
+	padding-top:10px;
+	border-bottom:1px dashed orange;
+}
+
+.CommentArea .SingleComment .uname{
+	border:none;
+	outline:none;
+	background:none;
+	color:#808080;
+	font-size:20px;
+	padding:0px;
+}
+
+.CommentArea .SingleComment .time{
+	border:none;
+	outline:none;
+	background:none;
+	color:#b9b9b9;
+	font-size:12px;
+	padding:0px;
+}
+
+.CommentArea .SingleComment .CommentContent{
+	padding-top:3px;
+}
+
+.CommentArea .SingleComment .CommentContent .comment{
+	color:#b9d0f4;
+}
+
+.CommentArea .SingleComment .DelCmtBt{
+	padding:0px;
+	font-size:12px;
+	border:none;
+	outline:none;
+	background:none;
+	color:#cdcdcd;
+}
+
+.CommentArea .SingleComment .DelCmtBt:hover{
+	color:red;
+}
+
+.CommentArea .MakeCommentArea{
+	margin-bottom:15px;
+}
+
+.CommentArea .MakeCommentArea textarea{
+	margin-top:20px;
+	border-color:#b9d0f4;
+	outline-color:#fab4bf;
+	width:395px;
+}
+
+.CommentArea .MakeCommentArea .commentBt{
+	font-size:16px;
+	margin-top:5px;
+	border:none;
+	background:#dce4fb;
+	color:#fab4bf;
+}
+
+.CommentArea .MakeCommentArea .commentBt:hover{
+	color:#d45e71;
+}
+
+/*-----右侧主体区域-评论区bottom------*/
+
+/*----------右侧主体区域bottom----------*/

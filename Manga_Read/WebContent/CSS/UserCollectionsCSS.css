@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/*---body---*/
+body{
+	margin:0px;
+}
+/*---body---*/
+
+/*----------左侧导航栏top----------*/
+.v_menu{
+	background: linear-gradient(#bcc4e9,#dce4fb,#f0e6ef,#fab4bf);/*渐变色*/
+	width:200px;
+	height:100%;	
+	position:fixed;
+}
+
+.v_menu .User{
+	z-index:2;
+}
+
+.v_menu .User .uname{
+	position:absolute;
+	left:80px;
+	font-size:16px;
+	text-decoration:none;
+	color:#be3cf7;
+	margin-top:10px;
+	margin-left:14px;
+	z-index:2;
+}
+
+.v_menu .secondblock{
+	position:relative;
+}
+
+.v_menu .secondblock .firstul{
+	list-style:none;
+}
+
+.v_menu .secondblock .firstul .firstli{
+	position:relative;
+	height:35px;
+	margin-right:-38px;
+	margin-top:-10px;
+	left:-38px;
+}
+.v_menu .secondblock .firstul .firstli:hover{
+	transition:1000ms;
+	background:#f0e6ef;
+}
+.v_menu .secondblock .firstul .firstli .bt{
+	/*先空着*/
+}
+.v_menu .secondblock .firstul .firstli .abt{
+	top:6px;
+	padding-right:130px;
+	padding-left:15px;
+	position:relative;
+	color:#d45e71;
+	left:2px;
+	font-size:20px;
+	font-family:KaiTi;
+	text-decoration:none;
+}
+.v_menu .secondblock .firstul .firstli .abt:after{
+ 	content: "\e6a2";							/*前图标，从iconfont类中引用的图标，\f107是标号，在jsp文件中要添加icofont.css的link*/
+ 	font-family: iconfont;
+    position: absolute;							/*这里要设置absolute不然图标会乱跑*/
+    top:0px;
+	left:165px;
+	display:block;
+}
+.v_menu .secondblock .firstul .firstli .abt:active:after{
+ 	content: "\e659";							/*前图标，从iconfont类中引用的图标，\f107是标号，在jsp文件中要添加icofont.css的link*/
+ 	font-family: iconfont;
+    position: absolute;							/*这里要设置absolute不然图标会乱跑*/
+    top:0px;
+	left:165px;
+	display:block;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul {
+	top:13px;
+	position:relative;
+	display:none;
+	list-style:none;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul .secondli{
+	position:relative;
+	height:35px;
+	left:-38px;
+}
+.v_menu .secondblock .firstul .firstli .secondul .secondli:hover{
+	transition:1000ms;
+	background:#f0e6ef;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul .secondli .bt{
+	top:6px;
+	position:relative;
+	left:0px;
+	border:none;
+	background:none;
+	font-size:20px;
+	font-family:KaiTi;
+	outline:none;
+	color:#d45e71;
+	padding-right:109px;
+}
+.v_menu .secondblock .firstul .firstli .secondul .secondli .bt:hover{
+	color:red;
+}
+
+.v_menu .thirdblock{
+	position:relative;
+	top:390px;
+}
+
+.v_menu .thirdblock .firstul{
+	list-style:none;
+}
+
+.v_menu .thirdblock .firstul .firstli{
+	position:relative;
+	left:-38px;
+}
+
+.v_menu .thirdblock .firstul .firstli .bt{
+	top:11px;
+	position:relative;
+	left:4px;
+	border:none;
+	background:none;
+	font-size:20px;
+	font-family:SimSun;
+	color:#8c96ff;
+	outline:none;
+}
+
+.v_menu .thirdblock .firstul .firstli .bt:hover{
+	color:white;
+}
+/*----------左侧导航栏bottom----------*/
+
+
+
+/*----------右侧漫画搜索结果区top----------*/
+
+.title{
+	position:absolute;
+	left:240px;
+	margin-bottom:-100px;
+}
+
+.title .TextBt{
+	border:none;
+	outline:none;
+	background:none;
+	color:#fab4bf;
+	font-size:30px;
+}
+
+/*-----漫画推荐区top-----*/
+
+ .MangaCover{
+	position:relative;
+	left:240px;
+	margin-top:140px;
+	width:650px;
+}
+
+ .MangaCover .img{
+	position:relative;
+	float:left;
+	padding-right:80px;
+}
+
+ .MangaCover .img .cover{
+	position:relative;
+	float:left;
+}
+
+ .MangaCover .txt{
+	position:relative;
+}
+
+ .MangaCover .txt .NameBt{
+	border:none;
+	outline:none;
+	background:none;
+	color:blue;
+	font-size:30px;
+	padding:0px;
+	margin-top:10px;
+}
+
+ .MangaCover .txt .author{
+	font-size:20px;
+	text-decoration:none;
+	color:orange;
+}
+
+ .MangaCover .txt .classify{
+	font-size:20px;
+	text-decoration:none;
+	color:orange;
+}
+
+ .MangaCover .txt .abstract{
+	text-decoration:none;
+	color:#c0c0c0;
+}
+
+ .MangaCover .txt .CCBt{
+ 	outline:none;
+ 	border:none;
+ 	background:#c0c0c0;
+ 	color:white;
+ 	font-size:16px;
+}
+
+/*-----漫画推荐区bottom-----*/
+/*----------右侧漫画搜索结果区bottom----------*/

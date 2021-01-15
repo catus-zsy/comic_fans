@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+a{
+	text-decoration:none;
+}
+
+.mg_link .link {									/*1.所有一级菜单*/
+  position:absolute;						/*设置所有一级菜单的整体位置*/
+  left:0px;									/*离左边的距离*/
+  top:0px;									/*离上边的距离*/
+  padding: 0px;								/*也是离各边的距离，和position不知有何区别*/
+  width:100%;
+  background:#e1ebfa;						/*设置一级菜单栏的背景色*/
+  list-style:none;							/*设置为无标志||和pad,mar的区别:https://www.cnblogs.com/dongh/p/9584962.html*/
+  margin: 10px auto;						/*设置两个水平框的距离、外边框*/
+  font-family: 'Century Gothic';			/*貌似是设置字体*/
+  box-shadow: 0px 0px 2px blue;				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+  clear: none;
+  display: table;							/*相当于table标签？*/
+  position:relative;							
+}
+
+.mg_link .link .mg_name{							/*2.一级菜单下的二级内容list*/
+  padding:10px 20px;
+  font-size: 16px;							/*设置list内的字体大小*/
+  position: relative;						/*设置位置为相对，不清楚是谁的位置*/
+  box-sizing: border-box;					/*box-sizing: content-box; 默认值 内容真正宽度 = 设置的宽度											box-sizing: border-box; 内容真正宽度width= 设置的width- 左右padding - 左右border*/
+  height: 40px;								/*设置一级菜单的高度*/
+  vertical-align: sub;						/*设置元素的垂直对齐方式，sub是垂直对齐文本的下标*/
+  background:#e1ebfa;						/*设置一级菜单栏的背景色*/
+  float:left;
+}
+
+.mg_link .link .mg_clsf{
+  padding:9px 10px;
+  font-size: 16px;							/*设置list内的字体大小*/
+  position: relative;						/*设置位置为相对，不清楚是谁的位置*/
+  box-sizing: border-box;					/*box-sizing: content-box; 默认值 内容真正宽度 = 设置的宽度											box-sizing: border-box; 内容真正宽度width= 设置的width- 左右padding - 左右border*/
+  height: 40px;								/*设置一级菜单的高度*/
+  vertical-align: sub;						/*设置元素的垂直对齐方式，sub是垂直对齐文本的下标*/
+  background:#e1ebfa;						/*设置一级菜单栏的背景色*/
+  float:left;
+}
+
+.mg_link .link .alt{							/*2.一级菜单下的二级内容list*/
+  padding:20px 10px;
+  font-size: 10px;							/*设置list内的字体大小*/
+  position: relative;						/*设置位置为相对，不清楚是谁的位置*/
+  box-sizing: border-box;					/*box-sizing: content-box; 默认值 内容真正宽度 = 设置的宽度											box-sizing: border-box; 内容真正宽度width= 设置的width- 左右padding - 左右border*/
+  height: 40px;								/*设置一级菜单的高度*/
+  vertical-align: sub;						/*设置元素的垂直对齐方式，sub是垂直对齐文本的下标*/
+  background:#e1ebfa;						/*设置一级菜单栏的背景色*/
+  float:right;
+}
+.mg_link .link .alt a{
+	  color:purple;
+}
+
+.delbt{										/*2.一级菜单下的二级内容list*/
+	font-family: 'Century Gothic';			/*貌似是设置字体*/
+	margin-top:19px;
+	font-size:10px;
+	color:purple;								/*此处设置按钮的字的颜色*/
+	background:#e1ebfa;
+	postion:relative;
+	border:none;
+	outline:none;
+	float:right;							/*让按钮浮动在右边*/
+}
+
+.mg_link .link .mg_name a:hover {					/*6.设置鼠标滑过链接时的响应*/
+  transition: 300ms all;
+  color: blue;							/*鼠标划过时，链接字体的颜色变化*/
+}
+
+.mg_link ul .alt a:hover {					/*6.设置鼠标滑过链接时的响应*/
+  transition: 500ms all;
+  color: red;							/*鼠标划过时，链接字体的颜色变化*/
+}
+
+.delbt:hover{
+	transition: 500ms all;
+	color:red;
+}

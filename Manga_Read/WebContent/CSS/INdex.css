@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+/*-------此部分重构---------*/
+/*ul li a{
+	color:blue;
+	text-decoration:none;
+}
+
+.index_top{
+	background:#b9d0f4;
+	height:100px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:40px;
+	margin-bottom:-20px;
+}
+
+.index_top .name{
+	position:relative;
+	color:blue;
+	font-size:70px;
+	font-family:KaiTi;
+}
+.index_top .members{
+	padding-top:35px;
+	display:table;
+	float:right;
+	list-style:none;	
+}
+.index_top .members .mbs{
+	padding-right:20px;
+}
+.index_top .members .mbs .mb{
+	font-size:16px;
+	font-family:KaiTi;
+	vertical-align: sub;						/*设置元素的垂直对齐方式，sub是垂直对齐文本的下标*/
+/*	display:none;
+	float:right;
+	list-style:none;
+	position:absolute;
+	z-index:2;	
+}
+/*.index_hmenu .hai{
+  position:fixed;						/*设置所有一级菜单的整体位置*/
+  /*left:0px;									/*离左边的距离*/
+  /*top:0px;									/*离上边的距离*/
+/*	position:fixed;
+/*	top:-15px;
+/*	padding:0;									/*块的大小是通过padding设置边距间接控制的，如果不是0的话，分割线的两端会留有空白*/
+/*	list-style:none;	
+/*	background:#e1ebff;
+/*	width:200px;
+	/*box-shadow: 0px 0px 2px blue;				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+/*	height:100%;
+/*}
+
+/*.index_hmenu ul li{
+  padding:10px 20px;
+  font-size: 16px;							/*设置list内的字体大小*/
+/*  position: relative;						/*设置位置为相对，不清楚是谁的位置*/
+/*  box-sizing: border-box;					/*box-sizing: content-box; 默认值 内容真正宽度 = 设置的宽度											box-sizing: border-box; 内容真正宽度width= 设置的width- 左右padding - 左右border*/
+/*  height: 40px;								/*设置一级菜单的高度*/
+/*  vertical-align: sub;						/*设置元素的垂直对齐方式，sub是垂直对齐文本的下标*/
+/*  background:#e1ebfa;						/*设置一级菜单栏的背景色*/
+/*  float:left;
+}
+.Searchbt{
+	margin-top:1px;
+	border:none;
+	font-size:16px;							/*设置按钮大小*/
+/*	background:#e1ebfa;
+	color:blue;
+}
+.h_clsf{
+	/*height:20px;可以设置height来设置按钮的高度*/
+/*	margin-top:-1px;
+	border:none;
+	font-size:16px;							/*设置按钮大小*/
+/*	background:#e1ebfa;
+	color:blue;
+}	
+/*-------此部分重构---------*/
+/*-------------------------*/
+
+
+/*----------窗体top---------*/
+body{
+	margin:0px;
+}
+/*----------窗体bottom---------*/
+
+
+/*----------左侧导航栏top-----------*/
+
+.v_menu{
+	background: linear-gradient(#bcc4e9,#dce4fb,#f0e6ef,#fab4bf);/*渐变色*/
+	width:200px;
+	height:100%;	
+	position:fixed;
+}
+
+.v_menu .secondblock{
+	position:relative;
+}
+
+.v_menu .secondblock .firstul{
+	list-style:none;
+}
+
+.v_menu .secondblock .firstul .firstli{
+	position:relative;
+	height:35px;
+	margin-right:-38px;
+	left:-38px;
+}
+.v_menu .secondblock .firstul .firstli:hover{
+	transition:1000ms;
+	background:#f0e6ef;
+}
+.v_menu .secondblock .firstul .firstli .bt{
+	/*先空着*/
+}
+.v_menu .secondblock .firstul .firstli .abt{
+	top:6px;
+	padding-right:130px;
+	padding-left:15px;
+	position:relative;
+	color:#d45e71;
+	left:2px;
+	font-size:20px;
+	font-family:KaiTi;
+}
+.v_menu .secondblock .firstul .firstli .abt:after{
+ 	content: "\e6a2";							/*前图标，从iconfont类中引用的图标，\f107是标号，在jsp文件中要添加icofont.css的link*/
+ 	font-family: iconfont;
+    position: absolute;							/*这里要设置absolute不然图标会乱跑*/
+    top:0px;
+	left:165px;
+	display:block;
+}
+.v_menu .secondblock .firstul .firstli .abt:active:after{
+ 	content: "\e659";							/*前图标，从iconfont类中引用的图标，\f107是标号，在jsp文件中要添加icofont.css的link*/
+ 	font-family: iconfont;
+    position: absolute;							/*这里要设置absolute不然图标会乱跑*/
+    top:0px;
+	left:165px;
+	display:block;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul {
+	top:13px;
+	position:relative;
+	display:none;
+	list-style:none;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul .secondli{
+	position:relative;
+	height:35px;
+	left:-38px;
+}
+.v_menu .secondblock .firstul .firstli .secondul .secondli:hover{
+	transition:1000ms;
+	background:#f0e6ef;
+}
+
+.v_menu .secondblock .firstul .firstli .secondul .secondli .bt{
+	top:6px;
+	position:relative;
+	left:0px;
+	border:none;
+	background:none;
+	font-size:20px;
+	font-family:KaiTi;
+	outline:none;
+	color:#d45e71;
+	padding-right:109px;
+}
+.v_menu .secondblock .firstul .firstli .secondul .secondli .bt:hover{
+	color:red;
+}
+
+.v_menu .thirdblock{
+	position:relative;
+	top:390px;
+}
+
+.v_menu .thirdblock .firstul{
+	list-style:none;
+}
+
+.v_menu .thirdblock .firstul .firstli{
+	position:relative;
+	left:-38px;
+}
+
+.v_menu .thirdblock .firstul .firstli .bt{
+	top:6px;
+	position:relative;
+	left:10px;
+	border:none;
+	background:none;
+	font-size:20px;
+	font-family:KaiTi;
+	color:#8c96ff;
+}
+
+
+/*----------左侧导航栏bottom-----------*/
+
+
+
+
+
+/*----------右侧功能区域top----------*/
+
+.main{
+	position:relative;
+	left:200px;
+}
+
+/*----------右侧功能区域bottom----------*/
+
+
+
+
+
+.shadow{
+	opacity:0.5;
+	display:none;
+	background:black;
+	padding-top:400px;
+	padding-bottom:800px;
+	padding-left:800px;
+	padding-right:1200px;
+	margin-top:-500px;
+	margin-bottom:-200px;
+	margin-left:-10px;
+	margin-right:-10px;
+	position:fixed;
+	z-index:1;
+}
+.adminlogin {
+	background:#e1d5ff;
+	display:none;
+	width:240px;
+	height:210px;
+	position:fixed;
+	float:left;
+	top:50%;
+	left:50%;
+	margin-top:-100px; 
+	margin-left:-120px;
+	z-index:2;
+}
+
+.adminlogin input{
+	padding-top:2px;
+	padding-bottom:3px;
+	padding-left:5px;
+	padding-right:15px;
+	margin-top:-5px;
+	margin-bottom:0px;
+	margin-left:50px;
+	margin-right:0px;
+	position:relative;
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+    width: 120px;
+    height:20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+    box-shadow: 0px 0px 2px blue;				/*右移和下移程度和辉光超出边界的长度，相当于发光吧*/
+}
+
+.adminlogin input:focus{								/*点击框之后发光*/
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+.shutlgbt{
+	font-size:12px;
+	border:none;
+	color:#ffffff;
+	background:#e1d5ff;
+	float:right;
+}
+.shutlgbt:hover{
+	color:#ff0000;
+}
+.adminlgbt{
+	font-size:16px;
+	border:none;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:44px;
+	padding-right:44px;
+	margin-top:16px;
+	margin-left:50px;
+	background:#ffffff;
+	color:#ee00ee;
+}
+	
+/*---------------*/	
+	
+.index_img{														/*修改div到左边的距离而不是修改图片的margin-left*/
+	margin-left:-35px;
+}
+
+.index_img .img_list .mg_cover{									/*1.所有一级菜单*/
+	list-style:none;
+	position:relative;						
+	float:left;	
+	padding-right:15px;
+}
+
+.index_img .img_list .mg_cover .mg_name{
+	font-size:16px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:2px;
+	background:#ffff80;
+	color:#ff8040;
+	text-decoration:none;
+	border:1px double #ff8040;
+}
+
+.MgCover{
+	border:1px double #ff8040;
+	background:#ffff80;
+	color:#ff8040;
+}
+
+/*---------------*/
+.notice{
+	top:750px;
+	padding-left:2px;
+	position:absolute;
+	z-index:1;
+}
+.notice a{
+	color:red;
+}
+
+.index_bottom{
+	border:0px solid #8080ff;
+	top:625px;
+	height:100px;
+	width:100%;
+	position:absolute;
+}
+.index_bottom .num{
+	display:table;
+	float:right;
+	position:relative;
+	margin-top:72px;
+	margin-right:10px;
+}
+#index_time{
+	float:right;
+	background:none;
+	color:blue;
+	margin-top:30px;
+	margin-right:-120px;
+	z-index:1;
+}
+
+
